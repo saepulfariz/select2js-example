@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>EXAMPLE SELECT 2 JS - BOOTSTRAP 5</title>
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="select2-bootstrap-5/select2-bootstrap-5-theme.css">
+    <link rel="stylesheet" href="select2js/css/select2.min.css">
+</head>
+
+<body class="bg-dark">
+    <div class="container mt-4">
+        <div class="row">
+            <div class="col">
+                <h3 class="text-light">EXAMPLE SELECT2 JS </h3>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-3">
+                <div class="mb-2">
+                    <label for="id_produk" class="text-light">PRODUK</label>
+                    <select name="id_produk" id="id_produk" class="form-control">
+                        <!-- option[value=$]{Data ke $}*10 -->
+                        <option value="1">Data Select ke 1</option>
+                        <option value="2">Data Select ke 2</option>
+                        <option value="3">Data Select ke 3</option>
+                        <option value="4">Data Select ke 4</option>
+                        <option value="5">Data Select ke 5</option>
+                        <option value="6">Data Select ke 6</option>
+                        <option value="7">Data Select ke 7</option>
+                        <option value="8">Data Select ke 8</option>
+                        <option value="9">Data Select ke 9</option>
+                        <option value="10">Data Select ke 10</option>
+                    </select>
+                </div>
+            </div>
+            <a href="https://apalfrey.github.io/select2-bootstrap-5-theme/" target="_blank">SUMBER</a>
+        </div>
+    </div>
+    <script src="bootstrap/js/bootstrap.bundle.min.js">
+    </script>
+    <script src="jquery.min.js"></script>
+    <script src="select2js/js/select2.min.js"></script>
+    <script>
+        // $.fn.select2.defaults.set("theme", "bootstrap");
+        $("select.form-control").select2({
+            theme: "bootstrap-5",
+            // width: $(this).data('width') ? $(this).data('width') : $(this).hasClass('w-100') ? '100%' : 'style',
+            width: '100%',
+            placeholder: $(this).data('placeholder'),
+        })
+    </script>
+</body>
+
+</html>

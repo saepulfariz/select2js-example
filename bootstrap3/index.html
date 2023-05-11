@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>EXAMPLE SELECT 2 JS - BOOTSTRAP 3</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="select2.bootstrap.min.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <h3>EXAMPLE SELECT2 JS </h3>
+            </div>
+        </div>
+        <div class="row bg-danger">
+            <div class="col-md-3">
+                <div class="input-group">
+                    <span class="input-group-addon" id="basic-addon1">@</span>
+                    <select name="id_produk" id="id_produk" class="form-control">
+                        <option value="1">Data Select ke 1</option>
+                        <option value="2">Data Select ke 2</option>
+                        <option value="3">Data Select ke 3</option>
+                        <option value="4">Data Select ke 4</option>
+                        <option value="5">Data Select ke 5</option>
+                        <option value="6">Data Select ke 6</option>
+                        <option value="7">Data Select ke 7</option>
+                        <option value="8">Data Select ke 8</option>
+                        <option value="9">Data Select ke 9</option>
+                        <option value="10">Data Select ke 10</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <script src="select2.full.min.js"></script>
+    <script>
+        $.fn.select2.defaults.set("theme", "bootstrap");
+        $("select.form-control").select2({
+            width: null
+        })
+    </script>
+</body>
+
+</html>
